@@ -194,4 +194,11 @@ public class DocumentoCSV {
 
     }
 
+    /**
+     * Este método devuelve el delimitador.
+     * @return
+     */
+    public String getDelimitador() {
+        return delimitador;
+    }
 }
