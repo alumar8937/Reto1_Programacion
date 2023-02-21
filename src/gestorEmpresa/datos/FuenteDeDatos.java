@@ -1,4 +1,6 @@
-import java.util.ArrayList;
+package gestorEmpresa.datos;
+
+import gestorEmpresa.primitivo.*;
 
 public abstract class FuenteDeDatos {
 
