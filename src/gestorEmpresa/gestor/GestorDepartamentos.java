@@ -1,3 +1,7 @@
+package gestorEmpresa.gestor;
+
+import gestorEmpresa.primitivo.Departamento;
+import gestorEmpresa.Utilidades;
 import java.util.ArrayList;
 /**
  * @author David Serna

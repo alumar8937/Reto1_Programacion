@@ -1,14 +1,19 @@
+package gestorEmpresa.menu;
+
+import gestorEmpresa.Utilidades;
+import gestorEmpresa.gestor.*;
+
 /**
  * @author Javier Blasco
  * @since 20/02/2023
  * @version 2.0.0
  */
-public class Menu_Epleados {
+public class Menu_Empleados {
 
     private static boolean salir = false;
 
     /**
-     * Este es el menu que cuenta con las opciones referidas a los empleados, el usuario selecciona la opcion
+     * Este es el gestorEmpresa.menu que cuenta con las opciones referidas a los empleados, el usuario selecciona la opcion
      * mientras que esta sea una de las que aparecen no soltara el mensaje de error.
      * {@link Utilidades#limpiarPantalla()}
      * {@link Utilidades#leerEntero}
@@ -23,10 +28,9 @@ public class Menu_Epleados {
 
         while (!salir) {
             Utilidades.limpiarPantalla();
-
-            String textoMenu = "1.-Consultar datos personales del trabajador por ID \n2.-Consultar datos de empresa del " +
-                    "trabajador por ID \n3.-Añadir datos personales y de empresa de un nuevo trabajador " +
-                    "\n4.-Modificar datos personales de un empleado por ID. \n5.-Modificar datos de empresa de un empleado por ID" +
+            String textoMenu = "1.-Consultar gestorEmpresa.datos personales del trabajador por ID \n2.-Consultar gestorEmpresa.datos de empresa del " +
+                    "trabajador por ID \n3.-Añadir gestorEmpresa.datos personales y de empresa de un nuevo trabajador " +
+                    "\n4.-Modificar gestorEmpresa.datos personales de un empleado por ID. \n5.-Modificar gestorEmpresa.datos de empresa de un empleado por ID" +
                     "\n6.-Eliminar un empleado \n7.-Volver a atras \nIntroduzca una opción válida:";
 
             switch (Utilidades.leerEntero(textoMenu)) {

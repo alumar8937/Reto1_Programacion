@@ -1,3 +1,10 @@
+package gestorEmpresa.gestor;
+
+import gestorEmpresa.primitivo.Empleado;
+import gestorEmpresa.primitivo.GrupoCotizacion;
+import gestorEmpresa.primitivo.HoraExtra;
+import gestorEmpresa.Utilidades;
+
 import java.util.ArrayList;
 /**
  * @author David Serna
@@ -16,7 +23,7 @@ public class GestorEmpleados {
     }
 
     /**
-     * Métoodo que saca los datos personales de un empleado según su ID
+     * Métoodo que saca los gestorEmpresa.datos personales de un empleado según su ID
      * {@link Utilidades#leerEntero(String)}
      * {@link Utilidades#mostrarMensaje(String)}
      * {@link Utilidades#mostrarError(String)}
@@ -45,7 +52,7 @@ public class GestorEmpleados {
     }
 
     /**
-     * Métoodo que saca los datos empresariales de un empleado según su ID
+     * Métoodo que saca los gestorEmpresa.datos empresariales de un empleado según su ID
      * {@link Utilidades#leerEntero(String)}
      * {@link Utilidades#mostrarMensaje(String)}
      * {@link Utilidades#mostrarError(String)}
@@ -120,7 +127,7 @@ public class GestorEmpleados {
         }
     }
     /**
-     * Método que agrega un usuario mediante la solicitud de los datos personales y de empresa de este
+     * Método que agrega un usuario mediante la solicitud de los gestorEmpresa.datos personales y de empresa de este
      * {@link Utilidades#leerEntero(String)}
      * {@link Utilidades#leerCadena(String)}
      * {@link Utilidades#mostrarPeticionDeConfirmacion(String)}
@@ -172,7 +179,7 @@ public class GestorEmpleados {
 
     }
     /**
-     * Método que modifica los datos empresariales de un empleado
+     * Método que modifica los gestorEmpresa.datos empresariales de un empleado
      * {@link Utilidades#leerEntero(String)}
      * {@link Utilidades#leerCadena(String)}
      * {@link Utilidades#mostrarError(String)}
@@ -200,7 +207,7 @@ public class GestorEmpleados {
     }
 
     /**
-     * Método que modifica los datos personal de un empleado
+     * Método que modifica los gestorEmpresa.datos personal de un empleado
      * {@link Utilidades#leerEntero(String)}
      * {@link Utilidades#leerCadena(String)}
      * {@link Utilidades#mostrarError(String)}

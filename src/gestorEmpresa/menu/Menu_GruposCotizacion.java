@@ -1,3 +1,9 @@
+package gestorEmpresa.menu;
+import gestorEmpresa.Utilidades;
+import gestorEmpresa.gestor.GestorEmpleados;
+import gestorEmpresa.gestor.GestorHorasExtras;
+import gestorEmpresa.gestor.GestorGruposCotizacion;
+
 /**
  * @author Javier Blasco
  * @since 20/02/2023
@@ -8,7 +14,7 @@ public class Menu_GruposCotizacion {
     private static boolean salir = false;
 
     /**
-     * Este es el menu que cuenta con las opciones referidas a los grupos de cotizacion, el usuario selecciona la opcion
+     * Este es el gestorEmpresa.menu que cuenta con las opciones referidas a los grupos de cotizacion, el usuario selecciona la opcion
      * mientras que esta sea una de las que aparecen no soltara el mensaje de error.
      * {@link Utilidades#limpiarPantalla()}
      * {@link Utilidades#leerEntero}
@@ -18,7 +24,7 @@ public class Menu_GruposCotizacion {
      * {@link GestorGruposCotizacion#agregarDatosGrupoCotizacion()}
      * {@link GestorGruposCotizacion#eliminarGrupoCotizacion()}
      */
-    public static void Menu_GruposCotizacion() {
+    public static void menuGruposCotizacion() {
         while (!salir) {
             Utilidades.limpiarPantalla();
 

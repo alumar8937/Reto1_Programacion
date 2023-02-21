@@ -1,3 +1,10 @@
+package gestorEmpresa.gestor;
+
+import gestorEmpresa.primitivo.Departamento;
+import gestorEmpresa.primitivo.Empleado;
+import gestorEmpresa.primitivo.GrupoCotizacion;
+import gestorEmpresa.primitivo.HoraExtra;
+import gestorEmpresa.Utilidades;
 import java.util.ArrayList;
 /**
  * @author David Serna

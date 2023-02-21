@@ -3,15 +3,15 @@ import java.util.ArrayList;
 public abstract class FuenteDeDatos {
 
     /**
-     * En este metodo se importaran los datos de los documentos csv asignados a las tablas de
-     * la base de datos en la que se basa el programa.
+     * En este metodo se importaran los gestorEmpresa.datos de los documentos csv asignados a las tablas de
+     * la base de gestorEmpresa.datos en la que se basa el programa.
      * {@link FuenteDeDatosCSV#cargarCategorias()}
      * {@link FuenteDeDatosCSV#cargarEmpleados()}
      * {@link FuenteDeDatosCSV#cargarDepartamentos()}
      * {@link FuenteDeDatosCSV#cargarGrupo_Cotizacion()}
      * {@link FuenteDeDatosCSV#cargarHores_extres()}
      */
-    public void obtener(Object obj) {
+    public void cargar(Object obj) {
         if (obj instanceof Categoria) {
             cargarCategorias();
             return;

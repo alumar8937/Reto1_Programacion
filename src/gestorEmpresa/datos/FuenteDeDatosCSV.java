@@ -1,3 +1,8 @@
+package gestorEmpresa.datos;
+
+import gestorEmpresa.gestor.*;
+import gestorEmpresa.primitivo.*;
+import gestorEmpresa.Utilidades;
 import java.util.ArrayList;
 
 public class FuenteDeDatosCSV extends FuenteDeDatos {
@@ -12,12 +17,12 @@ public class FuenteDeDatosCSV extends FuenteDeDatos {
     final private static String cabecera_Grupo_Cotizacion = "Id;sueldo_base";
     final private static String cabecera_Hores_extres = "id_usuario;hora";
 
-    DocumentoCSV CategoriaCSV = null;
-    DocumentoCSV Datos_EmpresaCSV = null;
-    DocumentoCSV Datos_PersonalesCSV = null;
-    DocumentoCSV DepartamentoCSV = null;
-    DocumentoCSV Grupo_CotizacionCSV = null;
-    DocumentoCSV Hores_extresCSV = null;
+    private DocumentoCSV CategoriaCSV = null;
+    private DocumentoCSV Datos_EmpresaCSV = null;
+    private DocumentoCSV Datos_PersonalesCSV = null;
+    private DocumentoCSV DepartamentoCSV = null;
+    private DocumentoCSV Grupo_CotizacionCSV = null;
+    private DocumentoCSV Hores_extresCSV = null;
 
     public FuenteDeDatosCSV(DocumentoCSV categoriaCSV, DocumentoCSV Datos_EmpresaCSV, DocumentoCSV Datos_PersonalesCSV,
                             DocumentoCSV DepartamentoCSV, DocumentoCSV Grupo_CotizacionCSV, DocumentoCSV Hores_extresCSV){
@@ -34,7 +39,7 @@ public class FuenteDeDatosCSV extends FuenteDeDatos {
      * no tanga campos soltara un error.
      * {@link Utilidades#mostrarError(String)}
      */
-    protected void cargarCategorias() { // Author: Pedro Marín Sanchis
+    protected void cargarCategorias() {
 
         ArrayList<Categoria> lista = new ArrayList<>(1);
 
@@ -57,11 +62,11 @@ public class FuenteDeDatosCSV extends FuenteDeDatos {
     }
 
     /**
-     * A partir de los datos que se enquentran en los csv importados la informacion de estos la carga en un arraylist
+     * A partir de los gestorEmpresa.datos que se enquentran en los csv importados la informacion de estos la carga en un arraylist
      * para su posterior uso.
      * {@link Utilidades#mostrarError(String)}
      */
-    protected void cargarEmpleados() { // Author: Pedro Marín Sanchis
+    protected void cargarEmpleados() {
 
         ArrayList<Empleado> lista = new ArrayList<>(1);
 
@@ -96,11 +101,11 @@ public class FuenteDeDatosCSV extends FuenteDeDatos {
     }
 
     /**
-     * A partir de los datos que se enquentran en los csv importados la informacion de estos la carga en un arraylist
+     * A partir de los gestorEmpresa.datos que se enquentran en los csv importados la informacion de estos la carga en un arraylist
      * para su posterior uso.
      * {@link Utilidades#mostrarError(String)}
      */
-    protected void cargarDepartamentos() { // Author: Pedro Marín Sanchis
+    protected void cargarDepartamentos() {
 
         ArrayList<Departamento> lista = new ArrayList<>(1);
 
@@ -123,11 +128,11 @@ public class FuenteDeDatosCSV extends FuenteDeDatos {
     }
 
     /**
-     * A partir de los datos que se enquentran en los csv importados la informacion de estos la carga en un arraylist
+     * A partir de los gestorEmpresa.datos que se enquentran en los csv importados la informacion de estos la carga en un arraylist
      * para su posterior uso.
      * {@link Utilidades#mostrarError(String)}
      */
-    protected void cargarGrupo_Cotizacion() { // Author: Pedro Marín Sanchis
+    protected void cargarGrupo_Cotizacion() {
 
         ArrayList<GrupoCotizacion> lista = new ArrayList<>(1);
 
@@ -150,11 +155,11 @@ public class FuenteDeDatosCSV extends FuenteDeDatos {
     }
 
     /**
-     * A partir de los datos que se enquentran en los csv importados la informacion de estos la carga en un arraylist
+     * A partir de los gestorEmpresa.datos que se enquentran en los csv importados la informacion de estos la carga en un arraylist
      * para su posterior uso.
      * {@link Utilidades#mostrarError(String)}
      */
-    protected void cargarHores_extres() { // Author: Pedro Marín Sanchis
+    protected void cargarHores_extres() {
 
         ArrayList<HoraExtra> lista = new ArrayList<>(1);
 

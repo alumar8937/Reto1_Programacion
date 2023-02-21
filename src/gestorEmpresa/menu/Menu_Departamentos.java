@@ -1,3 +1,8 @@
+package gestorEmpresa.menu;
+
+import gestorEmpresa.Utilidades;
+import gestorEmpresa.gestor.*;
+
 /**
  * @author Javier Blasco
  * @since 20/02/2023
@@ -8,7 +13,7 @@ public class Menu_Departamentos {
     private static boolean salir = false;
 
     /**
-     * Este es el menu que cuenta con las opciones referidas a los departamentos, el usuario selecciona la opcion
+     * Este es el gestorEmpresa.menu que cuenta con las opciones referidas a los departamentos, el usuario selecciona la opcion
      * mientras que esta sea una de las que aparecen no soltara el mensaje de error.
      * {@link Utilidades#limpiarPantalla()}
      * {@link Utilidades#leerEntero}
@@ -18,12 +23,12 @@ public class Menu_Departamentos {
      * {@link GestorDepartamentos#modificarDepartamento()}
      * {@link GestorDepartamentos#eliminarDepartamento()}
      */
-    public void Menu_Departamentos() {
+    public static void menuDepartamentos() {
 
         while (!salir) {
             Utilidades.limpiarPantalla();
 
-            String textoMenu = "1.-Consultar los datos de los empleados de un departamento " +
+            String textoMenu = "1.-Consultar los gestorEmpresa.datos de los empleados de un departamento " +
                     "\n2.-Consultar la cantidad de horas extras segun departamento \n3.-Agregar departamento"+
                     "\n4.-Modificar departamento \n5.-Eliminar departamento" +
                     "\n6.-Volver a atras \nIntroduzca una opción válida:";

@@ -1,3 +1,5 @@
+package gestorEmpresa.primitivo;
+
 /**
  * Define la información personal de una personal.
  *

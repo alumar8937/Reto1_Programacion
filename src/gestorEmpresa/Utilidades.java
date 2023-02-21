@@ -1,3 +1,5 @@
+package gestorEmpresa;
+
 import java.util.Scanner;
 
 /**
@@ -40,7 +42,7 @@ public class Utilidades {
     }
 
     public static int leerEntero(String mensaje) {
-        System.out.println();
+        System.out.println(mensaje);
         try {
             int entero = inputValue.nextInt();
             inputValue.nextLine();

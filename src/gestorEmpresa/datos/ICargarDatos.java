@@ -1,3 +1,5 @@
+package gestorEmpresa.datos;
+
 /**
  * @author Raul Simarro
  * @since 20/02/2023

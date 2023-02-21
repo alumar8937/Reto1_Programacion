@@ -1,3 +1,5 @@
+package gestorEmpresa.primitivo;
+
 /**
  * Define tanto la información personal de un empleado como la informacion.
  *
@@ -14,7 +16,7 @@ public class Empleado extends DatosPersonales {
     private String email;
 
     /**
-     * Constructor de Empleado
+     * Constructor de clases_primitivas.Empleado
      * @param id_usuario
      * @param id_departamento
      * @param NIF
@@ -45,11 +47,26 @@ public class Empleado extends DatosPersonales {
 
     }
 
+    public Empleado(){
+        this.id_usuario = 0;
+        this.id_departamento = 0;
+        this.NIF = null;
+        this.nombre = null;
+        this.apellido1 = null;
+        this.apellido2 = null;
+        this.num_SegSocial = 0;
+        this.antiguedad =  null;
+        this.cat_GrupoProfesional = null;
+        this.grupo_Cotizacion = 0;
+        this.email = null;
+
+    }
+
     /**
      * <pre>
      * Este método devuelve un array de Strings donde cada valor representa diferente información del empleado.
      * [0] : ID
-     * [1] : ID Departamento
+     * [1] : ID clases_primitivas.Departamento
      * [2] : NIF
      * [3] : Nombre
      * [4] : Primer apellido
