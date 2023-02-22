@@ -3,7 +3,8 @@ package gestorEmpresa.datos;
 import gestorEmpresa.datos.CSV.FuenteDeDatosCSV;
 import gestorEmpresa.primitivo.*;
 
-public abstract class FuenteDeDatos {
+public abstract class
+FuenteDeDatos {
 
     /**
      * En este metodo se importaran los gestorEmpresa.datos de los documentos csv asignados a las tablas de

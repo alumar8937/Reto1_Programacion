@@ -17,7 +17,7 @@ public class Menu_Importar {
     public static void menuCargarDatos() {
         while (!salir) {
             Utilidades.limpiarPantalla();
-            String textoMenu = "1.-A partir de CSV\n2.-Salir del Programa";
+            String textoMenu = "1.-Importar datos a partir de CSV\n2.-Atrás";
             switch(Utilidades.leerEntero(textoMenu)){
                 case 1:
                     try {

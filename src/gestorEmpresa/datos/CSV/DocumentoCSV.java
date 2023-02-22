@@ -189,9 +189,9 @@ public class DocumentoCSV {
      * @param destino
      * @throws IOException
      */
-    public void exportarComoArchivo(File destino) throws IOException {
+    public void exportarComoArchivo(File destino, String nombre) throws IOException {
 
-        FileWriter writer = new FileWriter(destino);
+        FileWriter writer = new FileWriter(new File(destino.getPath() + File.separator + nombre));
         writer.write(this.obtenerContenidoTextoPlano());
         writer.close();
 
