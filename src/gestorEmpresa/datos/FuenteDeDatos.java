@@ -1,5 +1,6 @@
 package gestorEmpresa.datos;
 
+import gestorEmpresa.datos.CSV.FuenteDeDatosCSV;
 import gestorEmpresa.primitivo.*;
 
 public abstract class FuenteDeDatos {

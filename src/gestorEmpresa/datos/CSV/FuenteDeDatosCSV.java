@@ -1,21 +1,14 @@
-package gestorEmpresa.datos;
+package gestorEmpresa.datos.CSV;
 
+import gestorEmpresa.datos.FuenteDeDatos;
 import gestorEmpresa.gestor.*;
 import gestorEmpresa.primitivo.*;
 import gestorEmpresa.Utilidades;
+
+import java.io.File;
 import java.util.ArrayList;
 
 public class FuenteDeDatosCSV extends FuenteDeDatos {
-
-
-    // CABECERAS CSV
-
-    final private static String cabecera_Categoria = "cat_GrupoProfesional";
-    final private static String cabecera_Datos_Empresa = "id_usuario;id_departamento;antiguedad;cat_GrupoProfesional;grupo_Cotizacion;email";
-    final private static String cabecera_Datos_Personales = "id_usuario;NIF;Nombre;Apellido1;Apellido2;num_SegSocial";
-    final private static String cabecera_Departamento = "id;Nombre";
-    final private static String cabecera_Grupo_Cotizacion = "Id;sueldo_base";
-    final private static String cabecera_Hores_extres = "id_usuario;hora";
 
     private DocumentoCSV CategoriaCSV = null;
     private DocumentoCSV Datos_EmpresaCSV = null;

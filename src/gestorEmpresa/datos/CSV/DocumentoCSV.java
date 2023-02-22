@@ -1,4 +1,4 @@
-package gestorEmpresa.datos;
+package gestorEmpresa.datos.CSV;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
-* gestorEmpresa.datos.DocumentoCSV es una clase para el tratamiento de archivos CSV, como argumentos para el constructor toma
+* DocumentoCSV es una clase para el tratamiento de archivos CSV, como argumentos para el constructor toma
 * Un File (archivo) y un String (delimitador). El propio constructor genera una estructura tal que:
 *
 * ArrayList de String arrays. Cada String array es un tuple del archivo CSV, includio el primero, que es
@@ -28,7 +28,7 @@ public class DocumentoCSV {
     final private ArrayList<String[]> tuples;
 
     /**
-     * Constructor de gestorEmpresa.datos.DocumentoCSV a partir de un objeto File
+     * Constructor de DocumentoCSV a partir de un objeto File
      * @param archivo
      * @param delimitador
      * @throws IOException
@@ -41,7 +41,7 @@ public class DocumentoCSV {
     }
 
     /**
-     * Construcor de gestorEmpresa.datos.DocumentoCSV a partir de un String
+     * Construcor de DocumentoCSV a partir de un String
      * @param contenido
      * @param delimitador
      */
@@ -184,7 +184,8 @@ public class DocumentoCSV {
     }
 
     /**
-     * Este método exporta el objeto gestorEmpresa.datos.DocumentoCSV como un fichero csv. Dentro de si mismo llama al método obtenerContenidoTextoPlano()
+     * Este método exporta el objeto DocumentoCSV como un fichero csv. Dentro de si mismo llama al método
+     * obtenerContenidoTextoPlano()
      * @param destino
      * @throws IOException
      */
