@@ -13,6 +13,7 @@ public class Menu_Principal {
     private static boolean comprobar = false;
 
     public static void menuPrincipal() {
+        salir = false;
         while (!salir) {
             Utilidades.limpiarPantalla();
             String textoMenu = "1.-Menú importar datos \n2.-Menú exportar datos \n3.-Menú departamentos" +

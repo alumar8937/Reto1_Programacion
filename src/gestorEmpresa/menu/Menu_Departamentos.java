@@ -24,7 +24,7 @@ public class Menu_Departamentos {
      * {@link GestorDepartamentos#eliminarDepartamento()}
      */
     public static void menuDepartamentos() {
-
+        salir = false;
         while (!salir) {
             Utilidades.limpiarPantalla();
 

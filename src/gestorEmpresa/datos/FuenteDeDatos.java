@@ -8,12 +8,7 @@ FuenteDeDatos {
 
     /**
      * En este metodo se importaran los gestorEmpresa.datos de los documentos csv asignados a las tablas de
-     * la base de gestorEmpresa.datos en la que se basa el programa.
-     * {@link FuenteDeDatosCSV#cargarCategorias()}
-     * {@link FuenteDeDatosCSV#cargarEmpleados()}
-     * {@link FuenteDeDatosCSV#cargarDepartamentos()}
-     * {@link FuenteDeDatosCSV#cargarGrupo_Cotizacion()}
-     * {@link FuenteDeDatosCSV#cargarHores_extres()}
+     * la base de gestorEmpresa.datos en la que se basa el programa
      */
     public void cargar(Object obj) {
         if (obj instanceof Categoria) {

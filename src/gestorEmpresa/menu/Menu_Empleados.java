@@ -25,7 +25,7 @@ public class Menu_Empleados {
      * {@link GestorEmpleados#eliminarEmpleado()}
      */
     public static void menuEmpleados() {
-
+        salir = false;
         while (!salir) {
             Utilidades.limpiarPantalla();
             String textoMenu = "1.-Consultar gestorEmpresa.datos personales del trabajador por ID \n2.-Consultar gestorEmpresa.datos de empresa del " +

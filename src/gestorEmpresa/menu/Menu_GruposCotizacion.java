@@ -25,6 +25,7 @@ public class Menu_GruposCotizacion {
      * {@link GestorGruposCotizacion#eliminarGrupoCotizacion()}
      */
     public static void menuGruposCotizacion() {
+        salir = false;
         while (!salir) {
             Utilidades.limpiarPantalla();
 

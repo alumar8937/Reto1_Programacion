@@ -15,6 +15,7 @@ import gestorEmpresa.primitivo.*;
 public class Menu_Importar {
     private static boolean salir = false;
     public static void menuCargarDatos() {
+        salir = false;
         while (!salir) {
             Utilidades.limpiarPantalla();
             String textoMenu = "1.-Importar datos a partir de CSV\n2.-Atrás";
@@ -29,7 +30,8 @@ public class Menu_Importar {
                     }
                     break;
                 case 2:
-                    System.exit(0);
+                    salir = true;
+                    break;
                 default:
                     Utilidades.mostrarMensaje("Has introducido una opción no válida.");
             }

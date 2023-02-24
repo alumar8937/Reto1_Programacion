@@ -14,6 +14,7 @@ public class Menu_Exportar {
     private static boolean salir = false;
 
     public static void menuExportarDatos() {
+        salir = false;
         while (!salir) {
             Utilidades.limpiarPantalla();
             String textoMenu = "1.-Exportar datos como CSV\n2.-Atrás";
@@ -35,6 +36,7 @@ public class Menu_Exportar {
                     break;
                 case 2:
                     salir = true;
+                    break;
                 default:
                     Utilidades.mostrarMensaje("Has introducido una opción no válida.");
             }
