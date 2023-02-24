@@ -28,9 +28,9 @@ public class Menu_Empleados {
         salir = false;
         while (!salir) {
             Utilidades.limpiarPantalla();
-            String textoMenu = "1.-Consultar gestorEmpresa.datos personales del trabajador por ID \n2.-Consultar gestorEmpresa.datos de empresa del " +
-                    "trabajador por ID \n3.-Añadir gestorEmpresa.datos personales y de empresa de un nuevo trabajador " +
-                    "\n4.-Modificar gestorEmpresa.datos personales de un empleado por ID. \n5.-Modificar gestorEmpresa.datos de empresa de un empleado por ID" +
+            String textoMenu = "1.-Consultar datos personales del trabajador por ID \n2.-Consultar datos de empresa del " +
+                    "trabajador por ID \n3.-Añadir datos personales y de empresa de un nuevo trabajador " +
+                    "\n4.-Modificar datos personales de un empleado por ID. \n5.-Modificar datos de empresa de un empleado por ID" +
                     "\n6.-Eliminar un empleado \n7.-Volver a atras \nIntroduzca una opción válida:";
 
             switch (Utilidades.leerEntero(textoMenu)) {

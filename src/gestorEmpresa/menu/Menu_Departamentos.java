@@ -28,7 +28,7 @@ public class Menu_Departamentos {
         while (!salir) {
             Utilidades.limpiarPantalla();
 
-            String textoMenu = "1.-Consultar los gestorEmpresa.datos de los empleados de un departamento " +
+            String textoMenu = "1.-Consultar los datos de los empleados de un departamento " +
                     "\n2.-Consultar la cantidad de horas extras segun departamento \n3.-Agregar departamento"+
                     "\n4.-Modificar departamento \n5.-Eliminar departamento" +
                     "\n6.-Volver a atras \nIntroduzca una opción válida:";
